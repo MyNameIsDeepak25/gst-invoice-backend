@@ -51,11 +51,11 @@
         <artifactId>spring-boot-starter-data-jpa</artifactId>
     </dependency>
 
-    <!-- Spring Security (auth + role-based access) -->
+    <!-- Spring Security (auth + role-based access) 
     <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-security</artifactId>
-    </dependency>
+    </dependency> -->
 
     <!-- Validation (JSR-380: @NotNull, @Email, etc.) -->
     <dependency>
@@ -67,11 +67,11 @@
 
     <!-- Lombok (to reduce boilerplate) -->
     <dependency>
-        <groupId>org.projectlombok</groupId>
-        <artifactId>lombok</artifactId>
-        <optional>true</optional>
-    </dependency>
-
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>1.18.34</version> <!-- or latest -->
+    <scope>provided</scope>
+</dependency>
     <!-- Flyway (DB migrations) -->
     <dependency>
         <groupId>org.flywaydb</groupId>
